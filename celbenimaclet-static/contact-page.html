@@ -1,17 +1,60 @@
 <!doctype html>
-<html>
+<html lang="ca">
 <head>
-<meta charset="utf-8">
-<title>Participa – CEL Benimaclet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Participa – CEL Benimaclet</title>
+  <meta name="description" content="Participa - CEL Benimaclet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<h1>Participa</h1>
-<nav>
-  <a href="index.html">Inici</a> |
-  <a href="qui-som.html">Qui som</a> |
-  <a href="contact-page.html">Participa</a>
-</nav>
+  <a class="skip-link" href="#main-content">Saltar al contingut principal</a>
 
-<p>Contacta amb nosaltres a: contacte@celbenimaclet.org</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="CEL Benimaclet - Inici">
+        <img src="celbenimaclet.org/wp-content/uploads/2025/09/cel_benimaclet-300x243.png" alt="Logotip de CEL Benimaclet">
+        <span>CEL Benimaclet</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegació principal">
+        <a href="index.html">Inici</a>
+        <a href="qui-som.html">Qui som</a>
+        <a href="projecte.html">Projecte</a>
+        <a href="contact-page.html" aria-current="page">Participa</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="main">
+    <section class="card" aria-labelledby="participa-title">
+      <h1 id="participa-title" class="page-title">Participa</h1>
+      <p>Contacta amb nosaltres per email: <a class="contact-inline" href="mailto:cel.benimaclet@gmail.com">cel.benimaclet@gmail.com</a> o afegis-te al formulari de participació.</p>
+    </section>
+
+    <section class="card form-card" aria-labelledby="formulari-title">
+      <h2 id="formulari-title">Formulari de participació</h2>
+      <div class="form-embed">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfvXe-J6MGVlUR_PtV7-ldFsGE2yoQfdQzRj2uJNnW6JObJyg/viewform?embedded=true"
+          width="640"
+          height="901"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Formulari de participació CEL Benimaclet"
+          loading="lazy">
+          Loading…
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>CEL Benimaclet</span>
+      <a class="contact-inline" href="mailto:cel.benimaclet@gmail.com">cel.benimaclet@gmail.com</a>
+    </div>
+  </footer>
 </body>
 </html>

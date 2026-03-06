@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Il·lustració d'energia comunitària</title>
+  <desc id="desc">Casa i edifici amb panells solars, persones i fulles verdes.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff3ff" />
+      <stop offset="100%" stop-color="#f8fcff" />
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd45b" />
+      <stop offset="100%" stop-color="#ff9f43" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f5a8f" />
+      <stop offset="100%" stop-color="#214165" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <circle cx="680" cy="100" r="52" fill="url(#sun)"/>
+  <path d="M0 360 C140 320 260 390 390 360 C530 330 640 385 800 350 L800 500 L0 500 Z" fill="#89c98b"/>
+
+  <rect x="95" y="220" width="180" height="130" rx="8" fill="#f4efe8"/>
+  <polygon points="80,230 185,160 290,230" fill="#db6e5f"/>
+  <rect x="132" y="270" width="40" height="80" fill="#875d45"/>
+  <rect x="196" y="265" width="56" height="40" rx="6" fill="#cae6ff"/>
+  <polygon points="102,225 185,178 268,225 258,238 185,196 111,238" fill="url(#panel)"/>
+
+  <rect x="360" y="180" width="220" height="170" rx="10" fill="#e9edf3"/>
+  <rect x="390" y="210" width="46" height="38" rx="4" fill="#cae6ff"/>
+  <rect x="448" y="210" width="46" height="38" rx="4" fill="#cae6ff"/>
+  <rect x="506" y="210" width="46" height="38" rx="4" fill="#cae6ff"/>
+  <rect x="448" y="266" width="46" height="84" fill="#697a8a"/>
+  <polygon points="352,195 470,130 588,195" fill="#4c6b89"/>
+  <rect x="372" y="160" width="198" height="34" transform="skewX(-20)" fill="url(#panel)"/>
+
+  <circle cx="300" cy="360" r="18" fill="#3b8f5b"/>
+  <rect x="298" y="378" width="4" height="40" fill="#4f6d49"/>
+  <ellipse cx="286" cy="345" rx="8" ry="14" fill="#63af73" transform="rotate(-30 286 345)"/>
+  <ellipse cx="314" cy="346" rx="8" ry="14" fill="#63af73" transform="rotate(30 314 346)"/>
+
+  <circle cx="610" cy="364" r="16" fill="#3b8f5b"/>
+  <rect x="608" y="380" width="4" height="34" fill="#4f6d49"/>
+  <ellipse cx="598" cy="352" rx="8" ry="13" fill="#63af73" transform="rotate(-28 598 352)"/>
+  <ellipse cx="622" cy="352" rx="8" ry="13" fill="#63af73" transform="rotate(28 622 352)"/>
+
+  <circle cx="250" cy="430" r="22" fill="#385066"/>
+  <rect x="243" y="446" width="14" height="34" rx="6" fill="#385066"/>
+  <circle cx="548" cy="430" r="22" fill="#385066"/>
+  <rect x="541" y="446" width="14" height="34" rx="6" fill="#385066"/>
+  <path d="M270 458 C330 435 470 435 528 458" stroke="#385066" stroke-width="10" fill="none" stroke-linecap="round"/>
+</svg>
