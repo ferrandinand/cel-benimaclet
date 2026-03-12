@@ -1,52 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc" xmlns:bx="https://boxy-svg.com">
   <title id="title">Il·lustració d'energia comunitària</title>
   <desc id="desc">Casa i edifici amb panells solars, persones i fulles verdes.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#dff3ff" />
-      <stop offset="100%" stop-color="#f8fcff" />
+      <stop offset="0" stop-color="#dff3ff"/>
+      <stop offset="1" stop-color="#f8fcff"/>
     </linearGradient>
     <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffd45b" />
-      <stop offset="100%" stop-color="#ff9f43" />
+      <stop offset="0" stop-color="#ffd45b"/>
+      <stop offset="1" stop-color="#ff9f43"/>
     </linearGradient>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2f5a8f" />
-      <stop offset="100%" stop-color="#214165" />
+      <stop offset="0" stop-color="#2f5a8f"/>
+      <stop offset="1" stop-color="#214165"/>
+    </linearGradient>
+    <linearGradient id="gradient-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f5a8f"/>
+      <stop offset="1" stop-color="#214165"/>
     </linearGradient>
   </defs>
-
   <rect width="800" height="500" fill="url(#sky)"/>
   <circle cx="680" cy="100" r="52" fill="url(#sun)"/>
-  <path d="M0 360 C140 320 260 390 390 360 C530 330 640 385 800 350 L800 500 L0 500 Z" fill="#89c98b"/>
-
+  <rect y="340.793" width="802.136" height="165.819" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x="1.017"/>
   <rect x="95" y="220" width="180" height="130" rx="8" fill="#f4efe8"/>
   <polygon points="80,230 185,160 290,230" fill="#db6e5f"/>
   <rect x="132" y="270" width="40" height="80" fill="#875d45"/>
   <rect x="196" y="265" width="56" height="40" rx="6" fill="#cae6ff"/>
-  <polygon points="102,225 185,178 268,225 258,238 185,196 111,238" fill="url(#panel)"/>
-
   <rect x="360" y="180" width="220" height="170" rx="10" fill="#e9edf3"/>
   <rect x="390" y="210" width="46" height="38" rx="4" fill="#cae6ff"/>
   <rect x="448" y="210" width="46" height="38" rx="4" fill="#cae6ff"/>
   <rect x="506" y="210" width="46" height="38" rx="4" fill="#cae6ff"/>
   <rect x="448" y="266" width="46" height="84" fill="#697a8a"/>
   <polygon points="352,195 470,130 588,195" fill="#4c6b89"/>
-  <rect x="372" y="160" width="198" height="34" transform="skewX(-20)" fill="url(#panel)"/>
-
+  <path transform="matrix(1, 0, -0.36397, 1, 95.792114, -2.333793)" fill="url(#panel)" style="" d="M 347.849 155.213 H 532.994 A 0 0 0 0 1 532.994 155.213 V 188.196 A 0 0 0 0 1 532.994 188.196 H 347.849 A 0 0 0 0 1 347.849 188.196 V 155.213 A 0 0 0 0 1 347.849 155.213 Z" bx:shape="rect 347.849 155.213 185.145 32.983 0 0 0 2@8eb3c67f"/>
   <circle cx="300" cy="360" r="18" fill="#3b8f5b"/>
   <rect x="298" y="378" width="4" height="40" fill="#4f6d49"/>
   <ellipse cx="286" cy="345" rx="8" ry="14" fill="#63af73" transform="rotate(-30 286 345)"/>
   <ellipse cx="314" cy="346" rx="8" ry="14" fill="#63af73" transform="rotate(30 314 346)"/>
-
   <circle cx="610" cy="364" r="16" fill="#3b8f5b"/>
   <rect x="608" y="380" width="4" height="34" fill="#4f6d49"/>
   <ellipse cx="598" cy="352" rx="8" ry="13" fill="#63af73" transform="rotate(-28 598 352)"/>
   <ellipse cx="622" cy="352" rx="8" ry="13" fill="#63af73" transform="rotate(28 622 352)"/>
-
   <circle cx="250" cy="430" r="22" fill="#385066"/>
   <rect x="243" y="446" width="14" height="34" rx="6" fill="#385066"/>
   <circle cx="548" cy="430" r="22" fill="#385066"/>
   <rect x="541" y="446" width="14" height="34" rx="6" fill="#385066"/>
   <path d="M270 458 C330 435 470 435 528 458" stroke="#385066" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path transform="matrix(1, 0, -0.36397, 1, -188.709534, 33.788895)" fill="url(#gradient-1)" style="stroke-width: 1px;" d="M 347.849 155.213 H 532.994 A 0 0 0 0 1 532.994 155.213 V 188.196 A 0 0 0 0 1 532.994 188.196 H 347.849 A 0 0 0 0 1 347.849 188.196 V 155.213 A 0 0 0 0 1 347.849 155.213 Z" bx:shape="rect 347.849 155.213 185.145 32.983 0 0 0 2@8eb3c67f"/>
+  <circle cx="93.268" cy="352.329" r="31.56" fill="#3b8f5b" style="stroke-width: 1px;"/>
+  <rect x="89.761" y="383.889" width="7.013" height="70.134" fill="#4f6d49" style="stroke-width: 1px;"/>
+  <ellipse cx="286" cy="345" rx="14.027" ry="24.547" fill="#63af73" transform="matrix(0.866025, -0.5, 0.5, 0.866025, -351.462977, 170.249939)" style="stroke-width: 1px;"/>
+  <ellipse cx="314" cy="346" rx="14.027" ry="24.547" fill="#63af73" transform="matrix(0.866025, 0.5, -0.5, 0.866025, 18.882434, -128.863212)" style="stroke-width: 1px;"/>
+  <path d="M 574.459 463.864 C 634.459 440.864 774.459 440.864 832.459 463.864" stroke="#385066" stroke-width="10" fill="none" stroke-linecap="round" style="stroke-width: 10px;"/>
+  <path d="M -28.796 459.287 C 31.204 436.287 171.204 436.287 229.204 459.287" stroke="#385066" stroke-width="10" fill="none" stroke-linecap="round" style="stroke-width: 10px;"/>
 </svg>
