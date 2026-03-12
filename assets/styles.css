@@ -299,6 +299,64 @@ textarea:focus-visible {
   font-family: "Fraunces", Georgia, serif;
 }
 
+.faq {
+  display: grid;
+  gap: 18px;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 20px;
+  background: #f9fbf9;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+.faq-answer {
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.faq-answer p + p {
+  margin-top: 10px;
+}
+
+.faq-list {
+  margin: 10px 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.faq-list li + li {
+  margin-top: 6px;
+}
+
 .integrated-figure {
   max-width: 860px;
   margin: 0 auto;
