@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estimació del cost de la participació - CEL Benimaclet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Saltar al contingut principal</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="CEL Benimaclet - Inici">
+                <img src="img/cel_benimaclet-300x243.png" alt="Logotip de CEL Benimaclet">
+                <span>CEL Benimaclet</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Navegació principal">
+                <a href="index.html">Inici</a>
+                <a href="qui-som.html">Qui som</a>
+                <a href="projecte.html">Projecte</a>
+                <a href="preguntes-frequents.html">Preguntes freqüents</a>
+                <a href="contact-page.html">Participa</a>
+                <a href="estimacio.html" aria-current="page">Calcula la teua participació</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="main">
+        <div class="hero">
+            <div>
+                <div class="badge">CEL Benimaclet</div>
+                <h1 class="page-title">Estimació del cost de la participació</h1>
+                <p class="lead">Calcula el cost de la teua participació en el projecte d'autoconsum compartit de
+                    Benimaclet de manera interactiva.</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="card-grid">
+                <div class="card">
+                    <h2 class="section-subtitle">Dades de Participació</h2>
+                    <p>Introdueix els kWp amb els quals desitges participar per vore el desglossament de la teua
+                        inversió.</p>
+
+                    <div class="calc-container">
+                        <label for="pressupost" class="result-label calc-label">Pressupost de referència:</label>
+                        <select id="pressupost" class="calc-input" style="margin-bottom: 12px;">
+                            <option value="ajuntament_vlc" data-potencia="95.58" data-inversio="102099.76">Ajuntament de
+                                València</option>
+                            <!-- Afegeix més pressupostos ací si cal -->
+                        </select>
+                        <div id="pressupost-info" style="font-size: 0.95rem; color: var(--muted); margin-bottom: 12px;">
+                        </div>
+
+                        <div
+                            style="background: #f9fbf9; border: 1px solid #cfe2d6; border-radius: 8px; padding: 14px 16px; margin-bottom: 26px; font-size: 0.9rem; color: var(--muted); line-height: 1.45;">
+                            <strong>Nota important:</strong> Aquests pressupostos s'han generat a principis de 2026 amb
+                            preus estimatius. L'import final de la instal·lació i el cost de les participacions podrien
+                            variar segons ofertes d'instal·ladores.
+                        </div>
+                        <label for="participacio" class="result-label calc-label">Participació (kWp):</label>
+                        <select id="participacio" class="calc-input">
+                            <option value="0.5">0.5</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="section-subtitle">Resultats de la Inversió</h2>
+                    <div class="calc-container">
+                        <div class="result-row" style="border-bottom: none; padding-bottom: 12px;">
+                            <span class="result-label" style="font-size: 1.15rem; color: var(--text);">Inversió (€) (+
+                                aportacions)</span>
+                            <span class="result-value" id="res-inversio-aportacions" style="font-size: 1.6rem;">0,00
+                                €</span>
+                        </div>
+
+                        <div
+                            style="font-size: 0.9rem; color: var(--muted); line-height: 1.6; padding-top: 16px; border-top: 1px dashed #cfe2d6;">
+                            <p style="margin-top: 0; margin-bottom: 10px;"><strong>Aquest import inclou:</strong></p>
+                            <ul style="margin: 0; padding-left: 20px;">
+                                <li style="margin-bottom: 6px;">Cost del muntatge de la instal·lació.</li>
+                                <li style="margin-bottom: 6px;">Dipòsit de desmuntatge sol·licitat per l'Ajuntament com
+                                    a garantia (3.000 euros per tota la instal·lació).</li>
+                                <li style="margin-bottom: 6px;">Aportacions per a l'Ajuntament (10% de l'energia
+                                    produïda) i famílies vulnerables (5% de l'energia produïda).</li>
+                                <li>Quota de soci del primer any (que serveix per a pagar l'assegurança de
+                                    responsabilitat civil anual i el
+                                    manteniment).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card readable-card calc-container">
+                <h2 class="section-subtitle">Quin paquet de participació és l'ideal per a mi?</h2>
+                <p>Els paquets de consum s'han dividit en <strong>tres opcions de participació (0.5 kWp, 1 kWp i 2
+                        kWp)</strong> per poder garantir que totes les necessitats i diversitat de les llars queden
+                    cobertes de la millor manera possible.</p>
+
+                <p>Et recomanem que, si no tens clar quin tipus de paquet s'adapta millor a la teua situació, consultes
+                    amb atenció la teua factura elèctrica. Si, malgrat tot, tens qualsevol mena de dubte sobre l'elecció
+                    o el procés, t'animem a adreçar-te a l'<a href="https://valenciasostenible.com/oficina-de-lenergia/"
+                        target="_blank" rel="noopener noreferrer" class="text-link">Oficina de l'Energia de l'Ajuntament
+                        de València</a>.</p>
+
+                <br>
+                <div class="badge" style="margin: 14px 0 6px 0;">Servei públic i gratuït</div>
+
+                <p>Recorda que l'Oficina de l'Energia és un <strong>estament públic</strong> que ofereix tots els seus
+                    serveis de forma íntegrament <strong>gratuïta</strong> per a la ciutadania.</p>
+
+                <p>El seu equip et pot assessorar de forma absolutament personalitzada. Demana una cita per
+                    a que revisen els teus hàbits i les teues factures en detall i et podran dir
+                    quin és el millor paquet per al teu cas i consum particular.</p>
+
+                <p style="margin-top: 14px; font-weight: 500;">Pots contactar-los escrivint a: <a class="contact-inline"
+                        href="mailto:valenciasostenible@valenciasostenible.com">valenciasostenible@valenciasostenible.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span>CEL Benimaclet</span>
+            <a class="contact-inline" href="mailto:cel.benimaclet@gmail.com">cel.benimaclet@gmail.com</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Constants fixes (depòsits, aportacions)
+            const depositoMontajeFactor = 0.03;
+            const depositoDesmontaje = 3000.00;
+            const suscripcionSRC = 600.00;
+            const aportacionAyuntamiento = 0.10;
+            const aportacionVulnerabilidad = 0.05;
+
+            // Elements de l'UI
+            const selectPressupost = document.getElementById('pressupost');
+            const pressupostInfo = document.getElementById('pressupost-info');
+            const inputParticipacio = document.getElementById('participacio');
+            const elApor = document.getElementById('res-inversio-aportacions');
+
+            // Funcions d'utilitat
+            function formatEur(num) {
+                return new Intl.NumberFormat('ca-ES', {
+                    style: 'currency',
+                    currency: 'EUR',
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                }).format(num);
+            }
+
+            function calculate() {
+                // Obtenir valor del pressupost seleccionat
+                const selectedOption = selectPressupost.options[selectPressupost.selectedIndex];
+                const potenciaPico = parseFloat(selectedOption.getAttribute('data-potencia'));
+                const inversionPresupuestada = parseFloat(selectedOption.getAttribute('data-inversio'));
+
+                pressupostInfo.innerHTML = `Instal·lació total: <strong>${potenciaPico.toLocaleString('ca-ES')} kWp</strong> &nbsp;|&nbsp; Cost previst base: <strong>${formatEur(inversionPresupuestada)}</strong>`;
+
+                // Càlcul de deposits basat en pressupost
+                const depositoMontaje = depositoMontajeFactor * inversionPresupuestada;
+                const importeTotalDepositos = inversionPresupuestada + depositoMontaje + depositoDesmontaje;
+                const importeTotalCompleto = importeTotalDepositos + suscripcionSRC;
+
+                // Obtenir el valor de participació
+                const participacio = parseFloat(inputParticipacio.value) || 0;
+
+                // Càlculs traduïts des de l'Excel:
+
+                // 1. Inversió (€) (projecte) = (Inversió pressupostada / Potència pic) * Participació
+                const invProjecte = (inversionPresupuestada / potenciaPico) * participacio;
+
+                // 2. Inversió (€) (+ dipòsits) = (Import total / Potència pic) * Participació
+                const invDiposits = (importeTotalDepositos / potenciaPico) * participacio;
+
+                // 3. Inversió (€) (+ aportacions) = (Import total amb SRC / Potència pic) * Participació / (1 - Aportació Ajuntament - Aportació Vulnerabilitat)
+                const invAportacions = ((importeTotalCompleto / potenciaPico) * participacio) / (1 - aportacionAyuntamiento - aportacionVulnerabilidad);
+
+                // 4. Inversió (€ sense IVA) = Inversió (+ aportacions) / 1.21
+                const invSenseIVA = invAportacions / 1.21;
+
+                // Actualitzar DOM de forma suau i formatada
+                elApor.textContent = formatEur(invAportacions);
+            }
+
+            // Calcular automàticament al canviar qualsevol input
+            inputParticipacio.addEventListener('input', calculate);
+            selectPressupost.addEventListener('change', calculate);
+
+            // Càlcul inicial en carregar
+            calculate();
+        });
+    </script>
+</body>
+
+</html>
