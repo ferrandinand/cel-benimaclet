@@ -87,10 +87,11 @@
                             <ul style="margin: 0; padding-left: 20px;">
                                 <li style="margin-bottom: 6px;">Cost del muntatge de la instal·lació.</li>
                                 <li style="margin-bottom: 6px;">Dipòsit de desmuntatge sol·licitat per l'Ajuntament com
-                                    a garantia (3.000 euros de tota la instal·lació).</li>
+                                    a garantia (3.000 euros per tota la instal·lació).</li>
                                 <li style="margin-bottom: 6px;">Aportacions per a l'Ajuntament (10% de l'energia
                                     produïda) i famílies vulnerables (5% de l'energia produïda).</li>
-                                <li>Quota de soci del primer any (que serveix per a pagar l'assegurança anual i el
+                                <li>Quota de soci del primer any (que serveix per a pagar l'assegurança de
+                                    responsabilitat civil anual i el
                                     manteniment).</li>
                             </ul>
                         </div>
@@ -139,6 +140,7 @@
             // Constants fixes (depòsits, aportacions)
             const depositoMontajeFactor = 0.03;
             const depositoDesmontaje = 3000.00;
+            const suscripcionSRC = 600.00;
             const aportacionAyuntamiento = 0.10;
             const aportacionVulnerabilidad = 0.05;
 
@@ -168,7 +170,8 @@
 
                 // Càlcul de deposits basat en pressupost
                 const depositoMontaje = depositoMontajeFactor * inversionPresupuestada;
-                const importeTotal = inversionPresupuestada + depositoMontaje + depositoDesmontaje;
+                const importeTotalDepositos = inversionPresupuestada + depositoMontaje + depositoDesmontaje;
+                const importeTotalCompleto = importeTotalDepositos + suscripcionSRC;
 
                 // Obtenir el valor de participació
                 const participacio = parseFloat(inputParticipacio.value) || 0;
@@ -179,10 +182,10 @@
                 const invProjecte = (inversionPresupuestada / potenciaPico) * participacio;
 
                 // 2. Inversió (€) (+ dipòsits) = (Import total / Potència pic) * Participació
-                const invDiposits = (importeTotal / potenciaPico) * participacio;
+                const invDiposits = (importeTotalDepositos / potenciaPico) * participacio;
 
-                // 3. Inversió (€) (+ aportacions) = Inversió (+ dipòsits) / (1 - Aportació Ajuntament - Aportació Vulnerabilitat)
-                const invAportacions = invDiposits / (1 - aportacionAyuntamiento - aportacionVulnerabilidad);
+                // 3. Inversió (€) (+ aportacions) = (Import total amb SRC / Potència pic) * Participació / (1 - Aportació Ajuntament - Aportació Vulnerabilitat)
+                const invAportacions = ((importeTotalCompleto / potenciaPico) * participacio) / (1 - aportacionAyuntamiento - aportacionVulnerabilidad);
 
                 // 4. Inversió (€ sense IVA) = Inversió (+ aportacions) / 1.21
                 const invSenseIVA = invAportacions / 1.21;

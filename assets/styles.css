@@ -244,7 +244,7 @@ textarea:focus-visible {
   color: var(--muted);
 }
 
-.card p + p {
+.card p+p {
   margin-top: 14px;
 }
 
@@ -343,7 +343,7 @@ textarea:focus-visible {
   color: var(--muted);
 }
 
-.faq-answer p + p {
+.faq-answer p+p {
   margin-top: 10px;
 }
 
@@ -353,7 +353,7 @@ textarea:focus-visible {
   color: var(--muted);
 }
 
-.faq-list li + li {
+.faq-list li+li {
   margin-top: 6px;
 }
 
@@ -407,6 +407,7 @@ textarea:focus-visible {
 }
 
 @media (max-width: 900px) {
+
   .hero,
   .card-grid {
     grid-template-columns: 1fr;
@@ -515,4 +516,89 @@ textarea:focus-visible {
 
 .calc-container {
   margin-top: 24px;
+}
+
+/* Timeline Components */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: var(--line);
+  top: 0;
+  bottom: 0;
+  left: 21px;
+  border-radius: 4px;
+}
+
+.timeline-item {
+  padding: 10px 0 30px 60px;
+  position: relative;
+  background: inherit;
+  width: 100%;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: auto;
+  background-color: var(--surface);
+  border: 4px solid var(--primary);
+  top: 15px;
+  left: 9px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.active::after {
+  background-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(29, 127, 82, 0.2);
+}
+
+.timeline-content {
+  padding: 20px 24px;
+  background: var(--surface);
+  position: relative;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--line);
+}
+
+.timeline-title {
+  font-family: inherit;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.timeline-content p {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.timeline-content ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.timeline-content li {
+  margin-bottom: 6px;
+}
+
+.timeline-content li:last-child {
+  margin-bottom: 0;
 }
