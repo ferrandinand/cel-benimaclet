@@ -442,3 +442,77 @@ textarea:focus-visible {
     min-height: 980px;
   }
 }
+
+/* --- Estimacio Calculator Styles --- */
+.calc-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 1.15rem;
+  font-family: inherit;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-bottom: 22px;
+  background: #f9fbf9;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.calc-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(29, 127, 82, 0.15);
+  background: #ffffff;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+
+.result-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.result-row:first-child {
+  padding-top: 0;
+}
+
+.result-label {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.result-value {
+  font-weight: 800;
+  color: var(--primary-dark);
+  font-size: 1.25rem;
+}
+
+.calculate-btn-wrapper {
+  margin-top: 24px;
+}
+
+.calc-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.calc-btn {
+  width: 100%;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 14px 20px;
+}
+
+.calc-container {
+  margin-top: 24px;
+}
